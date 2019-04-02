@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "点赞视频";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center;">点赞视频</h2>
+<form class="form-horizontal" action="/Video/Praise" method="post">
+    <div class="form-group">
+        <label for="txtUserId" class="col-sm-1 control-label">userid</label>
+        <div class="col-sm-10">
+            <input name="userId" type="text" class="form-control" id="txtUserId" placeholder="用户Id">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txtToken" class="col-sm-1 control-label">token</label>
+        <div class="col-sm-10">
+            <input name="token" type="text" class="form-control" id="txtToken" placeholder="用户Token">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txtVideoId" class="col-sm-1 control-label">videoid</label>
+        <div class="col-sm-10">
+            <input name="videoId" type="text" class="form-control" id="txtVideoId" placeholder="视频Id">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <h3>特别注意：</h3>
+            <p><strong>返回状态码为0：</strong>则表示点赞成功</p>
+            <p><strong>返回状态码为1：</strong>则表示取消点赞成功</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>

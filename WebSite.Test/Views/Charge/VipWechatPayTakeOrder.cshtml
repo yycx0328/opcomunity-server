@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "VIP微信支付下单";
+}
+<h2 style="text-align: center;">VIP微信支付下单</h2>
+<form class="form-horizontal" action="/Charge/VipWechatPayTakeOrder" method="post">
+    <div class="form-group">
+        <label for="txtUserId" class="col-sm-1 control-label">userid</label>
+        <div class="col-sm-10">
+            <input name="userId" type="text" class="form-control" id="txtUserId" placeholder="用户Id">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtToken" class="col-sm-1 control-label">token</label>
+        <div class="col-sm-10">
+            <input name="token" type="text" class="form-control" id="txtToken" placeholder="Token">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtVipType" class="col-sm-1 control-label">viptype</label>
+        <div class="col-sm-10">
+            <input name="vipType" type="text" class="form-control" id="txtVipType" placeholder="会员类型【固定值：Month（月会员）、Quarter（季会员）、HalfYear（半年会员）、Year（年会员）】">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>
+

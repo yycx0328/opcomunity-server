@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "获取主播分类列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center;">获取主播分类列表</h2>
+<form class="form-horizontal" action="/Anchor/GetAnchorCategoryList" method="post">
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>
+
+
+

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "获取礼物集合";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center;">获取礼物集合</h2>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <h3>接口返回参数说明：</h3>
+            <p><strong>OriginalPrice：</strong>原价</p>
+            <p><strong>DiscountPrice：</strong>折后价</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>
+
+
+

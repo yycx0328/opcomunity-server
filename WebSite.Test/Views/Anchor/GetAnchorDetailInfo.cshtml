@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "主播详细信息";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center;">主播详细信息</h2>
+<form class="form-horizontal" action="/Anchor/GetAnchorDetailInfo" method="post">
+    <div class="form-group">
+        <label for="txtUserId" class="col-sm-1 control-label">userid</label>
+        <div class="col-sm-10">
+            <input name="userId" type="text" class="form-control" id="txtUserId" placeholder="用户Id【非登录用户可空】">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txtToken" class="col-sm-1 control-label">token</label>
+        <div class="col-sm-10">
+            <input name="token" type="text" class="form-control" id="txtToken" placeholder="Token【非登录用户可空】">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txtAnchorId" class="col-sm-1 control-label">anchorid</label>
+        <div class="col-sm-10">
+            <input name="anchorId" type="text" class="form-control" id="txtAnchorId" placeholder="主播Id">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <h3>接口返回参数说明：</h3>
+            <p><strong>UserId：</strong>用户Id,即主播Id</p>
+            <p><strong>Description：</strong>签名</p>
+            <p><strong>Constellation：</strong>星座</p>
+            <p><strong>AuthStatus：</strong>0：未认证；1：认证中； 2：已认证</p>
+            <p><strong>CallRatio：</strong>呼叫费用如:100棉花糖/分钟</p>
+            <p><strong>Glamour：</strong>魅力值</p>
+            <p><strong>NeteaseAccId：</strong>网易通信账号</p> 
+            <p><strong>NeteaseLoginStatus：</strong>0：离线；1：在线</p>
+            <p><strong>NeteaseChatStatus：</strong>0：离线；1：在聊； 2：空闲</p>
+            <p><strong>IsFollow：</strong>是否已关注</p>
+            <p><strong>FollowCount：</strong>关注数</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>
+
+
+

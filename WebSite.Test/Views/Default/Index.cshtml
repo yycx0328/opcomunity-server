@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "接口列表";
+}
+<h2 style="text-align:center">接口列表</h2>
+<div class="container-fluid"> 
+    @*<p><a href="~/Test/DataInitialize" class="btn btn-success btn-block" style="text-align:left" role="button">【初始化话题数据】 /Test/DataInitialize</a></p>*@
+    <p><a href="~/Login/GetPhoneVerifyCode" class="btn btn-success btn-block" style="text-align:left" role="button">【获取手机验证码】 /Login/GetPhoneVerifyCode</a></p>
+    <p><a href="~/Login/EncryptPassword" class="btn btn-success btn-block" style="text-align:left" role="button">【加密原始密码】 /Login/EncryptPassword</a></p>
+    <p><a href="~/Login/PhoneRegist" class="btn btn-success btn-block" style="text-align:left" role="button">【手机注册】 /Login/PhoneRegist</a></p>
+    <p><a href="~/Login/PhoneLogin" class="btn btn-success btn-block" style="text-align:left" role="button">【手机登陆】 /Login/PhoneLogin</a></p>
+    <p><a href="~/Login/PhoneRestPassword" class="btn btn-success btn-block" style="text-align:left" role="button">【重置密码】 /Login/PhoneRestPassword</a></p>
+    <p><a href="~/Login/LoginToNetease" class="btn btn-success btn-block" style="text-align:left" role="button">【登录网易云账号】 /Login/LoginToNetease</a></p>
+    <p><a href="~/Anchor/GetBannerList" class="btn btn-success btn-block" style="text-align:left" role="button">【轮播图列表】 /Anchor/GetBannerList</a></p>
+    <p><a href="~/Anchor/ApplyTobeAnchor" class="btn btn-success btn-block" style="text-align:left" role="button">【申请成为主播】 /Anchor/ApplyTobeAnchor</a></p>
+    <p><a href="~/Anchor/UploadAnchorIdentity" class="btn btn-success btn-block" style="text-align:left" role="button">【上传主播身份认证】 /Anchor/UploadAnchorIdentity</a></p>
+    <p><a href="~/Anchor/GetRecommendAnchorList" class="btn btn-success btn-block" style="text-align:left" role="button">【推荐主播列表】 /Anchor/GetRecommendAnchorList</a></p>
+    <p><a href="~/Anchor/GetDiscoverAnchorList" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【发现主播列表】 /Anchor/GetDiscoverAnchorList</a></p>
+    <p><a href="~/Anchor/GetAnchorDetailInfo" class="btn btn-success btn-block" style="text-align:left" role="button">【主播详细信息】 /Anchor/GetAnchorDetailInfo</a></p>
+    <p><a href="~/Account/LiveCallRecord" class="btn btn-success btn-block" style="text-align:left" role="button">【记录视频通讯】 /Account/LiveCallRecord</a></p>
+    <p><a href="~/Account/LiveCallRecordPerMinute" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【每分钟视频通话扣费】 /Account/LiveCallRecordPerMinute</a></p>
+    <p><a href="~/Follow/GetFollowUsers" class="btn btn-success btn-block" style="text-align:left" role="button">【获取关注的用户集合】 /Follow/GetFollowUsers</a></p>
+    <p><a href="~/Follow/GetFollowMineUsers" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取粉丝用户】 /Follow/GetFollowMineUsers</a></p>
+    <p><a href="~/Follow/FollowUser" class="btn btn-success btn-block" style="text-align:left" role="button">【关注用户】 /Follow/FollowUser</a></p>
+    <p><a href="~/Follow/CancelFollow" class="btn btn-success btn-block" style="text-align:left" role="button">【取消关注】 /Follow/CancelFollow</a></p>
+    @*<p><a href="~/Collect/GetCollectTopics" class="btn btn-success btn-block" style="text-align:left" role="button">【获取收藏的作品】 /Collect/GetCollectTopics</a></p>
+    <p><a href="~/Collect/CollectTopic" class="btn btn-success btn-block" style="text-align:left" role="button">【收藏作品】 /Collect/CollectTopic</a></p>
+    <p><a href="~/Collect/CancelCollect" class="btn btn-success btn-block" style="text-align:left" role="button">【取消收藏作品】 /Collect/CancelCollect</a></p>
+    <p><a href="~/Qiniu/GetUploadToken" class="btn btn-success btn-block" style="text-align:left" role="button">【获取七牛上传凭证】 /Qiniu/GetUploadToken</a></p>*@
+    <p><a href="~/Account/GeUserDetailInfo" class="btn btn-success btn-block" style="text-align:left" role="button">【已登陆用户获取个人信息】 /Account/GeUserDetailInfo</a></p>
+    <p><a href="~/Account/GeOthersDetailInfo" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取普通用户个人信息】 /Account/GeOthersDetailInfo</a></p>
+    <p><a href="~/Account/ModifyDescription" class="btn btn-success btn-block" style="text-align:left" role="button">【修改用户签名】 /Account/ModifyDescription</a></p>
+    <p><a href="~/Account/ModifyNickName" class="btn btn-success btn-block" style="text-align:left" role="button">【修改用户昵称】 /Account/ModifyNickName</a></p>
+    <p><a href="~/Account/ModifyAvatar" class="btn btn-success btn-block" style="text-align:left" role="button">【修改用户头像】 /Account/ModifyAvatar</a></p>
+    <p><a href="~/Account/UploadLifeShow" class="btn btn-success btn-block" style="text-align:left" role="button">【上传个人照片】 /Account/UploadLifeShow</a></p>
+    <p><a href="~/Account/DeleteLifeShow" class="btn btn-success btn-block" style="text-align:left" role="button">【删除个人照片】 /Account/DeleteLifeShow</a></p>
+    <p><a href="~/Default/FeedBack" class="btn btn-success btn-block" style="text-align:left" role="button">【用户反馈】 /Default/FeedBack</a></p>
+    <p><a href="~/Default/GetTipOffCategory" class="btn btn-success btn-block" style="text-align:left" role="button">【获取举报类型】 /Default/GetTipOffCategory</a></p>
+    <p><a href="~/Default/TipOff" class="btn btn-success btn-block" style="text-align:left" role="button">【用户举报】 /Default/TipOff</a></p>
+    <p><a href="~/Default/GetGifts" class="btn btn-success btn-block" style="text-align:left" role="button">【获取礼物集合】 /Default/GetGifts</a></p>
+    <p><a href="~/Account/SendGift" class="btn btn-success btn-block" style="text-align:left" role="button">【发送礼物】 /Account/SendGift</a></p>
+    <p><a href="~/Default/GetMessage" class="btn btn-success btn-block" style="text-align:left" role="button">【获取消息】 /Default/GetMessage</a></p>
+    <p><a href="~/Account/Cash" class="btn btn-success btn-block" style="text-align:left" role="button">【用户提现】 /Account/Cash</a></p>
+    <p><a href="~/Account/TrasactionRecord" class="btn btn-success btn-block" style="text-align:left" role="button">【棉花糖余额记录】 /Account/TrasactionRecord</a></p>
+    <p><a href="~/Account/IncomeRecord" class="btn btn-success btn-block" style="text-align:left" role="button">【棉花糖收益记录】 /Account/IncomeRecord</a></p>
+    <p><a href="~/Charge/AlipayTakeOrder" class="btn btn-success btn-block" style="text-align:left" role="button">【获取签名的支付宝订单信息】 /Charge/AlipayTakeOrder</a></p>
+    <p><a href="~/Charge/WechatPayTakeOrder" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【微信充值下单】 /Charge/WechatPayTakeOrder</a></p>
+    <p><a href="~/Account/SetNeteaseLoginStatus" class="btn btn-success btn-block" style="text-align:left" role="button">【设置网易通讯登录状态】 /Account/SetNeteaseLoginStatus</a></p>
+    <p><a href="~/Account/SetNeteaseChatStatus" class="btn btn-success btn-block" style="text-align:left" role="button">【设置网易通讯聊天状态】 /Account/SetNeteaseChatStatus</a></p>
+    <p><a href="~/Account/LiveCallHistory" class="btn btn-success btn-block" style="text-align:left" role="button">【视频通话记录】 /Account/LiveCallHistory</a></p>
+    <p><a href="~/Anchor/GetDevoteRank" class="btn btn-success btn-block" style="text-align:left" role="button">【贡献榜】 /Anchor/GetDevoteRank</a></p>
+    <p><a href="~/Default/Config" class="btn btn-success btn-block" style="text-align:left" role="button">【获取审核开关状态】 /Default/Config</a></p>
+    <p><a href="~/Account/InviteRewardList" class="btn btn-success btn-block" style="text-align:left" role="button">【我的邀请奖励排行】 /Account/InviteRewardList</a></p>
+    <p><a href="~/Account/InviteStatistics" class="btn btn-success btn-block" style="text-align:left" role="button">【邀请总用户数及总奖励金额】 /Account/InviteStatistics</a></p>
+    <p><a href="~/Default/InviteRewardRankList" class="btn btn-success btn-block" style="text-align:left" role="button">【用户邀请获得奖励排行】 /Default/InviteRewardRankList</a></p>
+    <p><a href="~/Account/IncomeStatistics" class="btn btn-success btn-block" style="text-align:left" role="button">【我的收益统计】 /Account/IncomeStatistics</a></p>
+    <p><a href="~/Account/GetUnReadMeassageCount" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取未读消息数】 /Account/GetUnReadMeassageCount</a></p>
+    <p><a href="~/Account/SetMessageReadStatus" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【设置消息已读状态】 /Account/SetMessageReadStatus</a></p>
+    <p><a href="~/Anchor/SetCallRatio" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【设置主播呼叫费用】 /Anchor/SetCallRatio</a></p>
+    <p><a href="~/Default/CheckAppUpdate" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取APP版本更新】 /Default/CheckAppUpdate</a></p>
+    <p><a href="~/Anchor/GetCallRatioList" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取呼叫费用参数表】 /Anchor/GetCallRatioList</a></p>
+    <p><a href="~/Account/GeCoinCount" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【获取个人余额和收入】 /Account/GeCoinCount</a></p>
+    <p><a href="~/Account/GetUserInfoByAccId" class="btn btn-success btn-block" style="text-align:left;color:aquamarine" role="button">【根据网易云账号Id获取普通用户个人信息】 /Account/GetUserInfoByAccId</a></p>
+    <p><a href="~/Account/Visit" class="btn btn-success btn-block" style="text-align:left;color:blue" role="button">【记录APP访问日志】 /Account/Visit</a></p>
+    <p><a href="~/Account/GetUserList" class="btn btn-success btn-block" style="text-align:left;color:blue" role="button">【用户列表】 /Account/GetUserList</a></p>
+    <p><a href="~/Video/Upload" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【上传视频】 /Video/Upload</a></p>
+    <p><a href="~/Video/List" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【视频列表】 /Video/List</a></p>
+    <p><a href="~/Video/Praise" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【点赞视频】 /Video/Praise</a></p>
+    <p><a href="~/Video/Delete" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【删除视频】 /Video/Delete</a></p>
+    <p><a href="~/Video/Views" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【查看视频】 /Video/Views</a></p>
+    <p><a href="~/Video/MyVideoList" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【我的视频列表】 /Video/MyVideoList</a></p>
+    <p><a href="~/Video/AnchorVideoList" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【主播视频列表】 /Video/AnchorVideoList</a></p>
+    <p><a href="~/Login/VisitorLogin" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【游客登录】 /Login/VisitorLogin</a></p>
+    <p><a href="~/Anchor/GetRandomAnchor" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【随机主播】 /Anchor/GetRandomAnchor</a></p>
+    <p><a href="~/Anchor/SendBatchMessage" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【主播群发消息】 /Anchor/SendBatchMessage</a></p>
+    <p><a href="~/Charge/GetVipChargeMoneyConfig" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【VIP充值金额配置】 /Charge/GetVipChargeMoneyConfig</a></p>
+    <p><a href="~/Charge/VipWechatPayTakeOrder" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【VIP微信充值下单】 /Charge/VipWechatPayTakeOrder</a></p>
+    @*<p><a href="~/Account/CheckSendMessagePermission" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【是否有权限发送消息】 /Account/CheckSendMessagePermission</a></p>*@
+    <p><a href="~/Account/GetRemindMessageCount" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【获取剩余发送短信条数】 /Account/GetRemindMessageCount</a></p>
+    <p><a href="~/Anchor/GetAnchorCategoryList" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【获取主播分类列表】 /Anchor/GetAnchorCategoryList</a></p>
+    <p><a href="~/Charge/VipAlipayTakeOrder" class="btn btn-success btn-block" style="text-align:left;color:#810282" role="button">【VIP支付宝充值下单】 /Charge/VipAlipayTakeOrder</a></p>
+    <hr />
+    <p><a href="~/Charge/GetTicketConfig" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【邮票充值金额配置】 /Charge/GetTicketConfig</a></p>
+    <p><a href="~/Charge/TicketAlipayTakeOrder" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【邮票支付宝充值下单】 /Charge/TicketAlipayTakeOrder</a></p>
+    <p><a href="~/Charge/TicketWechatPayTakeOrder" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【邮票微信充值下单】 /Charge/TicketWechatPayTakeOrder</a></p>
+    <p><a href="~/Account/GetTotalRemainderTicketCount" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【获取总剩余邮票数】 /Account/GetTotalRemainderTicketCount</a></p>
+    <p><a href="~/Account/GetChatTicketCount" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【获取邮票数】 /Account/GetChatTicketCount</a></p>
+    <p><a href="~/Account/RecordChatTicketCount" class="btn btn-success btn-block" style="text-align:left;color:#ff6a00" role="button">【记录已消费邮票数】 /Account/RecordChatTicketCount</a></p>
+</div>
+
+
+
+

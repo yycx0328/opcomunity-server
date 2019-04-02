@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{656324A9-5234-4B23-9A57-6AF97208D737}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Opcomunity.Data</RootNamespace>
+    <AssemblyName>Opcomunity.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Mappings\TB_AdmUserChannelMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AnchorCategoryMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AnchorCategoryRelationMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AnchorIdentityMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AnchorMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AppVersionMap.cs" />
+    <Compile Include="Entities\Mappings\TB_AppVisitLogMap.cs" />
+    <Compile Include="Entities\Mappings\TB_BannerMap.cs" />
+    <Compile Include="Entities\Mappings\TB_CallAnchorMap.cs" />
+    <Compile Include="Entities\Mappings\TB_CashTransactionMap.cs" />
+    <Compile Include="Entities\Mappings\TB_ChannelMap.cs" />
+    <Compile Include="Entities\Mappings\TB_CityConfigMap.cs" />
+    <Compile Include="Entities\Mappings\TB_ConfigMap.cs" />
+    <Compile Include="Entities\Mappings\TB_FeedBackMap.cs" />
+    <Compile Include="Entities\Mappings\TB_GiftMap.cs" />
+    <Compile Include="Entities\Mappings\TB_GiftTransactionMap.cs" />
+    <Compile Include="Entities\Mappings\TB_JPushSmsMap.cs" />
+    <Compile Include="Entities\Mappings\TB_MessageMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseAccountMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseCallMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseCallMemberMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseMessageConfigMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseMessageSendMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseMessageUserMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseMsgConfigMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseTextMap.cs" />
+    <Compile Include="Entities\Mappings\TB_NeteaseUserMessageRelationMap.cs" />
+    <Compile Include="Entities\Mappings\TB_OrderAlipayCallbackResultMap.cs" />
+    <Compile Include="Entities\Mappings\TB_OrderAlipayStringMap.cs" />
+    <Compile Include="Entities\Mappings\TB_OrderChargeMap.cs" />
+    <Compile Include="Entities\Mappings\TB_OrderWechatPayClientPatameterMap.cs" />
+    <Compile Include="Entities\Mappings\TB_OssObjectMap.cs" />
+    <Compile Include="Entities\Mappings\TB_QiniuUploadTokenMap.cs" />
+    <Compile Include="Entities\Mappings\TB_SendBatchMessageMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsCallTimesMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsCashMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsChannelMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsChannelUserMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsChargeMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsCoinMap.cs" />
+    <Compile Include="Entities\Mappings\TB_StatisticsNeteaseCallMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TagMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TicketConfigMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TipOffCategoryMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TipOffMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TopicCollectMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TopicCommentMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TopicMap.cs" />
+    <Compile Include="Entities\Mappings\TB_TopicTagMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserAuthMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserCoinJournalMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserCoinMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserFollowMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserIncomeJournalMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserInviteMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserPhotoMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserTicketMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserTokenInfoMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserTopicPaymentMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserVideoMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserVideoPraiseMap.cs" />
+    <Compile Include="Entities\Mappings\TB_UserVIPMap.cs" />
+    <Compile Include="Entities\Mappings\TB_VIPConfigMap.cs" />
+    <Compile Include="Entities\OpcomunityContext.cs" />
+    <Compile Include="Entities\TB_AdmUserChannel.cs" />
+    <Compile Include="Entities\TB_Anchor.cs" />
+    <Compile Include="Entities\TB_AnchorCategory.cs" />
+    <Compile Include="Entities\TB_AnchorCategoryRelation.cs" />
+    <Compile Include="Entities\TB_AnchorIdentity.cs" />
+    <Compile Include="Entities\TB_AppVersion.cs" />
+    <Compile Include="Entities\TB_AppVisitLog.cs" />
+    <Compile Include="Entities\TB_Banner.cs" />
+    <Compile Include="Entities\TB_CallAnchor.cs" />
+    <Compile Include="Entities\TB_CashTransaction.cs" />
+    <Compile Include="Entities\TB_Channel.cs" />
+    <Compile Include="Entities\TB_CityConfig.cs" />
+    <Compile Include="Entities\TB_Config.cs" />
+    <Compile Include="Entities\TB_FeedBack.cs" />
+    <Compile Include="Entities\TB_Gift.cs" />
+    <Compile Include="Entities\TB_GiftTransaction.cs" />
+    <Compile Include="Entities\TB_JPushSms.cs" />
+    <Compile Include="Entities\TB_Message.cs" />
+    <Compile Include="Entities\TB_NeteaseAccount.cs" />
+    <Compile Include="Entities\TB_NeteaseCall.cs" />
+    <Compile Include="Entities\TB_NeteaseCallMember.cs" />
+    <Compile Include="Entities\TB_NeteaseMessageConfig.cs" />
+    <Compile Include="Entities\TB_NeteaseMessageSend.cs" />
+    <Compile Include="Entities\TB_NeteaseMessageUser.cs" />
+    <Compile Include="Entities\TB_NeteaseMsgConfig.cs" />
+    <Compile Include="Entities\TB_NeteaseText.cs" />
+    <Compile Include="Entities\TB_NeteaseUserMessageRelation.cs" />
+    <Compile Include="Entities\TB_OrderAlipayCallbackResult.cs" />
+    <Compile Include="Entities\TB_OrderAlipayString.cs" />
+    <Compile Include="Entities\TB_OrderCharge.cs" />
+    <Compile Include="Entities\TB_OrderWechatPayClientPatameter.cs" />
+    <Compile Include="Entities\TB_OssObject.cs" />
+    <Compile Include="Entities\TB_QiniuUploadToken.cs" />
+    <Compile Include="Entities\TB_SendBatchMessage.cs" />
+    <Compile Include="Entities\TB_StatisticsCallTimes.cs" />
+    <Compile Include="Entities\TB_StatisticsCash.cs" />
+    <Compile Include="Entities\TB_StatisticsChannel.cs" />
+    <Compile Include="Entities\TB_StatisticsChannelUser.cs" />
+    <Compile Include="Entities\TB_StatisticsCharge.cs" />
+    <Compile Include="Entities\TB_StatisticsCoin.cs" />
+    <Compile Include="Entities\TB_StatisticsNeteaseCall.cs" />
+    <Compile Include="Entities\TB_Tag.cs" />
+    <Compile Include="Entities\TB_TicketConfig.cs" />
+    <Compile Include="Entities\TB_TipOff.cs" />
+    <Compile Include="Entities\TB_TipOffCategory.cs" />
+    <Compile Include="Entities\TB_Topic.cs" />
+    <Compile Include="Entities\TB_TopicCollect.cs" />
+    <Compile Include="Entities\TB_TopicComment.cs" />
+    <Compile Include="Entities\TB_TopicTag.cs" />
+    <Compile Include="Entities\TB_User.cs" />
+    <Compile Include="Entities\TB_UserAuth.cs" />
+    <Compile Include="Entities\TB_UserCoin.cs" />
+    <Compile Include="Entities\TB_UserCoinJournal.cs" />
+    <Compile Include="Entities\TB_UserFollow.cs" />
+    <Compile Include="Entities\TB_UserIncomeJournal.cs" />
+    <Compile Include="Entities\TB_UserInvite.cs" />
+    <Compile Include="Entities\TB_UserPhoto.cs" />
+    <Compile Include="Entities\TB_UserTicket.cs" />
+    <Compile Include="Entities\TB_UserTokenInfo.cs" />
+    <Compile Include="Entities\TB_UserTopicPayment.cs" />
+    <Compile Include="Entities\TB_UserVideo.cs" />
+    <Compile Include="Entities\TB_UserVideoPraise.cs" />
+    <Compile Include="Entities\TB_UserVIP.cs" />
+    <Compile Include="Entities\TB_VIPConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+      <Project>{CB28AEA4-F22C-44A5-B09A-AC10F3A651AE}</Project>
+      <Name>Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

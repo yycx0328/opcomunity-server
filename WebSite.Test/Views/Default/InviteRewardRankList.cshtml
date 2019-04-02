@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "用户邀请获得奖励排行";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center;">用户邀请获得奖励排行</h2>
+<form class="form-horizontal" action="/Default/InviteRewardRankList" method="post">
+    <div class="form-group">
+        <label for="txtPageIndex" class="col-sm-1 control-label">pageindex</label>
+        <div class="col-sm-10">
+            <input name="pageIndex" type="text" class="form-control" id="txtPageIndex" placeholder="页码（索引从1开始）">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txtPageSize" class="col-sm-1 control-label">pagesize</label>
+        <div class="col-sm-10">
+            <input name="pageSize" type="text" class="form-control" id="txtPageSize" placeholder="每页条数">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtResult" class="col-sm-1 control-label">Result</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txtResult" rows="5">@ViewData["Result"]</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-10">
+            <p><a href="~/Default/Index" class="btn btn-default" style="text-align:left" role="button">返回接口列表</a></p>
+        </div>
+    </div>
+</form>
+
+
+
